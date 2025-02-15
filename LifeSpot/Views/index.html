@@ -8,23 +8,46 @@
         <h1>LifeSpot - прямые трансляции с улиц</h1>
         <!--Параграф-->
         <p>Покажем, что происходит прямо сейчас</p>
+
+        <div class="search-container">
+            <input type="text" oninput=
+            "filterContent( inputParseFunction )" size="50%">
+
+            <button class="search-button">Поиск</button>
+        </div>
     </header>
-    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css"/>
+
+    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css" />
+    <script src="../Static/JS/index.js"></script>
+    <script>
+        // Проверка на возраст
+        //checkAge();
+        setTimeout(() =>
+            alert("Нравится LifeSpot? " + '\n' +  "Подпишитесь на наш ТГ @lifespot999!" ),
+        15000);
+        // сохранение сессии
+        handleSession()
+        
+        // вывод данных сессии в консоль
+        sessionLog();
+    
+        // функция для получения пользовательского ввода    
+        const inputParseFunction = function(){
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
+    </script>
+
 </head>
 <body>
     <div class="bordered">
 
         <aside id="sidebar">
             <div class="navbar">
-                <a href="/"><p>Все трансляции</p></a>
-                <a href="/"><p>О проекте</p></a>
+                <a href="index.html"><p>Все трансляции</p></a>
+                <a href="about.html"><p>О проекте</p></a>
+                <a href="testing.html"><p>Тестовая страница</p></a>
             </div>
         </aside>
-
-        <div class="search-container">
-            <input type="text" placeholder="Поиск видео..." class="search-input">
-            <button class="search-button">Поиск</button>
-        </div>
 
         <div class="video-container">
             <iframe width="360" height="270" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -47,4 +70,5 @@
         </footer>
     </div>
 </body>
+
 </html>

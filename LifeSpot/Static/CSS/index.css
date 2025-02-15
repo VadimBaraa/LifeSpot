@@ -5,7 +5,7 @@ header, footer, aside, body, .navbar, .video-container {
 }
 
 header, footer, body, .video-container {
-    background-color: #fff2c6;
+    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(48,43,83,0.958) 100%);
 }
 
 /*Простые селекторы*/
@@ -21,6 +21,7 @@ header {
 
 h3 {
     padding-left: 5%;
+    color: #c0df25;
 }
 
 .video-container {
@@ -31,7 +32,7 @@ h3 {
 
 .navbar {
     color: #34fe1e;
-    padding-left: 15%;
+    padding-left: 1%;
 }
 
 header {
@@ -88,7 +89,7 @@ aside {
     z-index: 1; /* Сайд-бар будет поверх остальных элементов */
     top: 0; /* Сайдбар будет в самой верхней части страницы */
     left: 0;
-    background-color: #111; /* Черный цвет фона (задан в виде кода) */
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(48,43,83,0.6) 100%); 
     overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
     padding-top: 2%;
     font-size: large;
@@ -106,7 +107,38 @@ body {
     color: #c0df25;
     padding-left: 15%;
 }
-    /* Стили панели навигации при наведении мышью */
-    .navbar p:hover {
-        color: deeppink;
-    }
+
+ /* Стили панели навигации при наведении мышью */
+.navbar p:hover {
+    color: deeppink;
+}
+
+.review-container,.review-button{
+    display: inline-block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+ }
+
+ .review-container,.review-button{
+    display: inline-block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+ }
+  
+ .review-text{
+    display: block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+    color: aqua;
+ }
+
+ .reviews{
+    display: block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+    color: aqua;
+ }
