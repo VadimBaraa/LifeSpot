@@ -4,7 +4,7 @@ header, footer, aside, body, .navbar, .video-container {
     font-family: "Helvetica 65 Medium", sans-serif;
 }
 
-header, footer, body, .video-container {
+header, body, .video-container {
     background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(48,43,83,0.958) 100%);
 }
 
@@ -30,6 +30,12 @@ h3 {
     padding-top: 1%;
 }
 
+.img-container {
+    display: inline-block;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
 .navbar {
     color: #34fe1e;
     padding-left: 1%;
@@ -42,13 +48,14 @@ header {
 
 footer {
     margin-top: auto;
-    position: absolute;
+    position: flex;
     bottom: 0;
     font-size: medium;
-    color: dimgrey;
+    color: rgb(109, 167, 184);
     font-size: small;
     line-height: 66%;
     padding-left: 1%;
+    
 }
 
 .search-container {
@@ -96,7 +103,11 @@ aside {
 }
 
 body {
-    padding-left: 11%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* Устанавливаем минимальную высоту на 100% высоты окна */
+    margin-left: 12.5%; /* Убираем отступы по умолчанию */
+    padding: 20px;
 }
 
 
@@ -142,3 +153,50 @@ body {
     padding-top: 1%;
     color: aqua;
  }
+
+ .like-button {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем рамку */
+    cursor: pointer; /* Указатель при наведении */
+    font-size: 20px; /* Размер шрифта */
+    color: #c0df25; /* Цвет сердечка */
+    transition: transform 0.2s, color 0.2s; /* Плавный переход для эффекта нажатия и изменения цвета */
+}
+
+/* Эффект при наведении на кнопку */
+.like-button:hover {
+    transform: scale(1.1); /* Увеличение кнопки при наведении */
+    color: #e91e63; /* Изменение цвета сердечка при наведении */
+}
+
+/* Эффект при нажатии на кнопку */
+.like-button:active {
+    transform: scale(0.9); /* Уменьшение кнопки при нажатии */
+}
+
+
+
+/*слайдер*/
+.swiper-container {
+    width: 100%; /* Ширина контейнера */
+    max-width: 1000px; /* Максимальная ширина контейнера */
+    margin: auto; /* Центрирование контейнера */
+}
+
+.swiper-slide {
+    display: flex; /* Для центрирования содержимого */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(48,43,83,0.958) 100%); /* Цвет фона для наглядности */
+    font-size: 24px; /* Размер текста */
+    color: #c0df25;
+    
+}
+
+.swiper-slide img {
+    width: 100%; /* Адаптивная ширина изображения */
+    height: auto; /* Автоматическая высота */
+    max-height: 600px; /* Максимальная высота изображения */
+    
+}
+

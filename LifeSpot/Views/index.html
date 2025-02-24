@@ -20,22 +20,14 @@
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css" />
     <script src="../Static/JS/index.js"></script>
     <script>
-        // Проверка на возраст
-        //checkAge();
-        setTimeout(() =>
-            alert("Нравится LifeSpot? " + '\n' +  "Подпишитесь на наш ТГ @lifespot999!" ),
-        15000);
-        // сохранение сессии
-        handleSession()
-        
-        // вывод данных сессии в консоль
-        sessionLog();
-    
-        // функция для получения пользовательского ввода    
+        // обработка сессии
+        handleSession(logger,  checker /* Коллбек-функции */);
+      
+        // функция для получения пользовательского ввода   
         const inputParseFunction = function(){
             return document.getElementsByTagName('input')[0].value.toLowerCase();
         }
-    </script>
+     </script>
 
 </head>
 <body>
@@ -50,18 +42,18 @@
         </aside>
 
         <div class="video-container">
-            <iframe width="360" height="270" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h3 class="video-title">Нью-Йорк, Брайант Парк</h3>
+            <iframe width="360" height="270" src="https://rutube.ru/play/embed/adc237633e596de2133d2e5b1fd0a404" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">Нью-Йорк, Ночная поездка</h3>
         </div>
 
         <div class="video-container">
-            <iframe width="360" height="270" src="https://www.youtube.com/embed/wCcMcaiRbhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h3 class="video-title">Санкт-Петербург, Невский Проспект</h3>
+            <iframe width="360" height="270" src="https://rutube.ru/play/embed/4c1925789d4a69b4e612eee0589218c7/?r=wd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">Ночная прогулка по Москве</h3>
         </div>
 
         <div class="video-container">
-            <iframe width="360" height="270" src="https://www.youtube.com/embed/JplMzss6_YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h3 class="video-title">Лондон, автобусный маршрут</h3>
+            <iframe width="360" height="270" src="https://rutube.ru/play/embed/35d410a987deec4198e7479a316f5d69/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">Прогулка по Лондону</h3>
         </div>
 
          <footer>
